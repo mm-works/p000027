@@ -1,0 +1,73 @@
+{
+	"name": "@mmstudio/p000027",
+	"version": "1.0.0",
+	"private": true,
+	"description": "建材展示",
+	"templateInfo": {
+		"name": "taro-ui",
+		"typescript": true,
+		"css": "none"
+	},
+	"scripts": {
+		"dev": "yarn dev:h5",
+		"build": "yarn build:rn",
+		"build:weapp": "taro build --type weapp",
+		"build:swan": "taro build --type swan",
+		"build:alipay": "taro build --type alipay",
+		"build:tt": "taro build --type tt",
+		"build:h5": "taro build --type h5",
+		"build:rn": "taro build --type rn",
+		"build:qq": "taro build --type qq",
+		"build:jd": "taro build --type jd",
+		"build:quickapp": "taro build --type quickapp",
+		"dev:weapp": "yarn build:weapp --watch",
+		"dev:swan": "yarn build:swan --watch",
+		"dev:alipay": "yarn build:alipay --watch",
+		"dev:tt": "yarn build:tt --watch",
+		"dev:h5": "yarn build:h5 --watch",
+		"dev:rn": "yarn build:rn --port 8081 --watch",
+		"dev:qq": "yarn build:qq --watch",
+		"dev:jd": "yarn build:jd --watch",
+		"dev:quickapp": "yarn build:quickapp --watch"
+	},
+	"browserslist": [
+		"last 3 versions",
+		"Android >= 4.1",
+		"ios >= 8"
+	],
+	"author": "",
+	"dependencies": {
+		"@babel/runtime": "^7.13.10",
+		"@tarojs/cli": "3.2.0-beta.2",
+		"@tarojs/components": "3.2.0-beta.2",
+		"@tarojs/react": "3.2.0-beta.2",
+		"@tarojs/rn-runner": "^3.2.0-beta.2",
+		"@tarojs/runtime": "3.2.0-beta.2",
+		"@tarojs/taro": "3.2.0-beta.2",
+		"@tarojs/taro-rn": "3.2.0-beta.2",
+		"lodash": "4.17.21",
+		"react": "^17.0.1",
+		"react-dom": "^17.0.1",
+		"react-native": "^0.64.0",
+		"taro-ui": "^3.0.0-alpha.10"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.13.10",
+		"@tarojs/mini-runner": "3.2.0-beta.2",
+		"@tarojs/webpack-runner": "3.2.0-beta.2",
+		"@types/react": "^17.0.3",
+		"@types/react-native": "^0.63.51",
+		"@types/webpack-env": "^1.16.0",
+		"@typescript-eslint/eslint-plugin": "^4.x",
+		"@typescript-eslint/parser": "^4.x",
+		"babel-preset-taro": "3.2.0-beta.2",
+		"eslint": "^7.22.0",
+		"eslint-config-taro": "3.2.0-beta.2",
+		"eslint-plugin-import": "^2.22.1",
+		"eslint-plugin-react": "^7.22.0",
+		"eslint-plugin-react-hooks": "^4.2.0",
+		"metro-react-native-babel-preset": "^0.65.2",
+		"stylelint": "13.12.0",
+		"typescript": "^4.2.3"
+	}
+}
