@@ -2,7 +2,6 @@
 const config = {
 	projectName: 'p000027',
 	date: '3/30/2021',
-	date: '2021-3-15',
 	designWidth: 750,
 	deviceRatio: {
 		640: 2.34 / 2,

@@ -1,5 +1,5 @@
 import taro from '@tarojs/taro';
 
 export default {
-	navigationBarTitleText: '爱装修'
+	navigationBarTitleText: '建材详情'
 } as taro.PageConfig;
