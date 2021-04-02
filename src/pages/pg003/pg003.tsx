@@ -63,11 +63,25 @@ function C001({ data }: { data?: Picture[]; }) {
  */
 function C002({ data }: { data?: ITbmaterial; }) {
 	if (!data) {
-		return <Text className='err'>未获取到数据.</Text>
+		return <Text className='err'>正在加载...</Text>
 	}
 	return <>
 		<View>
-			产品名称:{data.name}
+			<View>
+				产品名称:{data.name}
+			</View>
+			<View>
+				颜色:{data.color}
+			</View>
+			<View>
+				库存:{data.no}
+			</View>
+			<View>
+				单价:{data.price}元
+			</View>
+			<View>
+				状态:{data.state === 2 ? '已下架' : '在售'}
+			</View>
 		</View>
 		<View>
 			详细信息:
