@@ -8,14 +8,14 @@ import a003 from '../../atoms/a003';
 
 type Record = Pick<ITbmaterial, "id" | "cover" | "name">;
 type Result = Record[];
+const s001 = 'pg002/s001';
 
 export default function pg002() {
 	const [data, setdata] = useState<Result>([]);
 	const router = taro.useRouter<{ type: string; }>();
-	console.log('aaa', router.params.type)
 	useEffect(() => {
 		void (async () => {
-			const d = await a002<Result>('pg002/s001', {
+			const d = await a002<Result>(s001, {
 				type: router.params.type
 			});
 			setdata(d);
