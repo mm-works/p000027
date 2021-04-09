@@ -11,9 +11,13 @@ export default {
 	],
 	tabBar: {
 		list: [{
+			iconPath: './imgs/jcjc2.svg',
+			selectedIconPath: './imgs/jcjc1.svg',
 			text: '装修建材',
 			pagePath: 'pages/pg001/pg001'
 		}, {
+			iconPath: './imgs/jcxg2.svg',
+			selectedIconPath: './imgs/jcxg1.svg',
 			text: '新闻资讯',
 			pagePath: 'pages/pg004/pg004'
 		}]

@@ -49,8 +49,12 @@ export default function pg004() {
 	taro.useReachBottom(async () => {
 		const d = await loaddata(page);
 		if (d.length > 0) {
-			setdata(data.concat(d));
-			setpage(page + 1);
+			setdata((data) => {
+				return data.concat(d);
+			});
+			setpage((page) => {
+				return page + 1;
+			});
 		}
 	});
 	if (data.length === 0) {
@@ -74,10 +78,10 @@ function C001({ data }: { data: IData; }) {
 	const d = new Date();
 	d.setTime(data.time);
 	const tm = d.toLocaleDateString();
-	return <View>
+	return <View className='p004s003'>
 		<Navigator url={url}>
-			<Text>{data.title}</Text>
-			<Text>发布时间：{tm}</Text>
+			<Text className='p004s001'>{data.title}</Text>
+			<Text className='p004s002'>发布时间：{tm}</Text>
 		</Navigator>
 	</View>;
 }

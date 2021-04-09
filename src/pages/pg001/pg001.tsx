@@ -37,7 +37,8 @@ function C001({ data }: { data?: ITbswiper[]; }) {
 			indicatorActiveColor='#333'
 			circular
 			indicatorDots
-			autoplay>
+			autoplay
+		>
 			{data?.map((it, key) => {
 				const uri = a003(it.id);
 				return <SwiperItem key={key}>
@@ -63,7 +64,7 @@ function C003({ data }: { data: ITbtypes; }) {
 	const uri = a003(data.cover);
 	const url = `/pages/pg002/pg002?type=${data.type}`;
 	return <View>
-		<Navigator url={url}>
+		<Navigator url={url} className='p001s001'>
 			<Image className='img' src={uri} />
 			{data.name}
 		</Navigator>

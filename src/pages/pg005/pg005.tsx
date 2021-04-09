@@ -36,10 +36,16 @@ export default function pg005() {
 	return (
 		<>
 			<View>
-				<Text>{data.title}</Text>
-				<Text>作者:{data.author}</Text>
-				<Text>发布时间:{tm}</Text>
-				<RichText>发布时间:{data.content}</RichText>
+				<Text className='p005s001'>{data.title}</Text>
+			</View>
+			<View>
+				<Text className='p005s002'>作者:{data.author}</Text>
+			</View>
+			<View>
+				<Text className='p005s003'>发布时间:{tm}</Text>
+			</View>
+			<View>
+				<RichText className='p005s004' nodes={data.content}></RichText>
 			</View>
 		</>
 	);

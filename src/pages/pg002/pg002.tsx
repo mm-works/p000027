@@ -25,7 +25,7 @@ export default function pg002() {
 	return (
 		<>
 			<View>
-				<Text>建材列表</Text>
+				<Text className='p002s004'>建材列表</Text>
 				{data.map((it, key) => {
 					return <C001 data={it} key={key} />
 				})}
@@ -36,9 +36,9 @@ export default function pg002() {
 
 function C001({ data }: { data: Record; }) {
 	const url = `/pages/pg003/pg003?id=${data.id}`
-	return <View>
+	return <View className='p002s001'>
 		<Navigator url={url}>
-			<Text>名称:{data.name}</Text>
+			<Text className='p002s002'>{data.name}</Text>
 			{data.cover && <Image src={a003(data.cover)}></Image>}
 		</Navigator>
 	</View>;
